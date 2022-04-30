@@ -11,13 +11,8 @@
     text-decoration: none;
     color: white;
 
-    &:hover,
-    &:focus {
+    &:hover {
       color: #61dafb;
     }
   }
-}
-
-.active {
-  color: #61dafb;
 }

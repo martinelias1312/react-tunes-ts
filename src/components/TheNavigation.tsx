@@ -9,9 +9,42 @@ type Props = {};
 const TheNavigation = (props: Props) => {
   return (
     <nav className={styles.navigation}>
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/tunes">Tunes</NavLink>
-      <NavLink to="/about">About</NavLink>
+      <NavLink
+        to="/"
+        style={({ isActive }) =>
+          isActive
+            ? {
+                color: "#61dafb",
+              }
+            : {}
+        }
+      >
+        Home
+      </NavLink>
+      <NavLink
+        to="/tunes"
+        style={({ isActive }) =>
+          isActive
+            ? {
+                color: "#61dafb",
+              }
+            : {}
+        }
+      >
+        Tunes
+      </NavLink>
+      <NavLink
+        to="/about"
+        style={({ isActive }) =>
+          isActive
+            ? {
+                color: "#61dafb",
+              }
+            : {}
+        }
+      >
+        About
+      </NavLink>
     </nav>
   );
 };
